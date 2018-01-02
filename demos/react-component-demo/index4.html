@@ -12,20 +12,25 @@
   class MyTitle extends React.Component {
     constructor(...args) {
       super(...args);
-      this.state = {
-        text: 'World'
-      };
     }
 
     handleClick() {
+      var date = new Date();
+      var text = "";
+
+      if (!this.state || !this.state.text) {
+        text = ""+date.getFullYear()+"年"+(date.getMonth()+1)+"月"+date.getDate()+"日";      
+      }
+
       this.setState({
-        text: 'Clicked'
+        text: text
       });
     }
 
     render() {
+      var text = (this.state && this.state.text) ? this.state.text : "world";
       return <h1 onClick={this.handleClick.bind(this)}>
-        {'Hello ' + this.state.text}
+        {'Hello ' + text}
       </h1>;
     }
   };

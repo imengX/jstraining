@@ -13,7 +13,8 @@
     constructor(...args) {
       super(...args);
       this.state = {
-        name: '访问者'
+        placeholder: '访问者',
+        name:''
       };
     }
 
@@ -25,9 +26,10 @@
     }
 
     render() {
+      var name = this.state.name?this.state.name:this.state.placeholder;
       return <div>
         <input type="text" onChange={this.handleChange.bind(this)} />
-        <p>你好，{this.state.name}</p>
+        <p>你好，{name}</p>
       </div>;
     }
   };
