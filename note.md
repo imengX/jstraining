@@ -159,3 +159,25 @@
 感觉好像和 React 组件的状态 eg3 没什么区别
 
 ##React 组件的生命周期
+
+一个React 使用的基本使用例子
+
+利用 jquery 的请求 api $.getJSON(url) 实现请求
+并且应该是使用了 ES6 的语法 (response => { })
+
+使用数组的 [forEach()](http://javascript.ruanyifeng.com/stdlib/array.html#toc15) 方法 
+
+
+  ```
+    function log(element, index, array) {
+      console.log('[' + index + '] = ' + element);
+    }
+
+    [2, 5, 9].forEach(log);
+    // [0] = 2
+    // [1] = 5
+    // [2] = 9
+    
+  ```
+
+使用{}取变量的值 html 可以直接写在 React JS 中

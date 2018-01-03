@@ -43,10 +43,15 @@
         return <span>Error: {this.state.error}</span>;
       } else {
         /* 你的代码填入这里 */
+        var projects = this.state.data.items;
+        var result = [];
+        projects.forEach(item=>{
+          var htmlItem = <li>{item.name}</li>;
+          result.push(htmlItem);
+        })
         return (
           <div>
-            <p>API 数据获取成功</p>
-            <p>改写代码，将结果显示在这里</p>
+            <ol>{result}</ol>
           </div>
         );
       }
