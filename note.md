@@ -181,3 +181,22 @@
   ```
 
 使用{}取变量的值 html 可以直接写在 React JS 中
+
+##ReCharts
+
+使用 
+
+const {LineChart, Line, XAxis, YAxis, CartesianGrid} = Recharts;
+
+引入库中的组建 引入之后的使用与自定义组件一致
+
+##MobX
+
+使用 npm 构建而不是 script 标签引入 
+使用 import 替代 const 引入组件
+
+介绍了关键字 (mobx)
+
+- @observer(观察者) 
+- @observable(被观察的属性)
+- @computed(自动计算得到的属性)
