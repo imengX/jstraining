@@ -7,11 +7,17 @@ import App from './App';
 import reducer from './reducer';
 
 // Store
-const store = createStore(reducer);
+const store0 = createStore(reducer);
+const store1 = createStore(reducer);
 
 ReactDOM.render(
-  <Provider store={store}>
+  <div>
+  <Provider store={store0}>
     <App />
-  </Provider>,
+  </Provider>
+  <Provider store={store1}>
+    <App />
+  </Provider>
+  </div>,
   document.body.appendChild(document.createElement('div'))
 );

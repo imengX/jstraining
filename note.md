@@ -184,7 +184,7 @@
 
 ##ReCharts
 
-使用 
+使用
 
 const {LineChart, Line, XAxis, YAxis, CartesianGrid} = Recharts;
 
@@ -192,11 +192,38 @@ const {LineChart, Line, XAxis, YAxis, CartesianGrid} = Recharts;
 
 ##MobX
 
-使用 npm 构建而不是 script 标签引入 
+使用 npm 构建而不是 script 标签引入
 使用 import 替代 const 引入组件
 
 介绍了关键字 (mobx)
 
-- @observer(观察者) 
+- @observer(观察者)
 - @observable(被观察的属性)
 - @computed(自动计算得到的属性)
+
+##Redux
+
+//TODO:不是特别懂 需要再理解 
+应该是实现了分离
+使用 mapStateToProps 映射绑定了 state 和 props
+使用 mapDispatchToProps 映射绑定了 方法
+
+##Simple App
+
+npm的基本用法
+package.json 的使用配置
+
+easy as pie 
+
+##REST API
+
+了解 json-server 的使用
+RESTAPI 的 get post put delete 
+
+##Express
+
+通过 Express 实现路由
+
+思考题：Node 应用能否直接在80端口启动？
+
+80端口需要root用户 非root用户端口限制在1024以上

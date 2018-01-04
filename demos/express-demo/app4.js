@@ -12,13 +12,23 @@ router.use(function(req, res, next) {
   next();
 });
 
+router.use(function (req,res, next) {
+  var now = Date().toString();
+  console.log(now);
+  next();
+})
+
 router.get('/', function(req, res) {
-  res.send('<h1>Hello World</h1>');
+  res.send('<h1>Hello ' + req.query.name + '</h1>');
+  // res.send('<h1>Hello World</h1>');
 });
 
 router.get('/:name', function(req, res) {
   res.send('<h1>Hello ' + req.params.name + '</h1>');
 });
+
+// routher.get('/?name', function (req, res) {
+// });
 
 router.post('/', function (req, res) {
   var name = req.body.name;
