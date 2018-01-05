@@ -227,3 +227,22 @@ RESTAPI 的 get post put delete
 思考题：Node 应用能否直接在80端口启动？
 
 80端口需要root用户 非root用户端口限制在1024以上
+
+##ESLint
+
+代码检查工具的使用 
+
+可以配置规则
+
+使用 airbnb 的规则 eslint-config-airbnb-base
+
+##Mocha
+
+使用 Mocha 配合及断言库 Chai 实现单元测试
+
+##Nightmare
+
+Nightmare 应该属于界面操作方面的库
+配合 Mocha 配合及断言库 Chai 实现单元测试
+Nightmare 可以通过注入 (.evaluate) 来操作 浏览器 API
+
