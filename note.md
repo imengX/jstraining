@@ -246,3 +246,6 @@ Nightmare 应该属于界面操作方面的库
 配合 Mocha 配合及断言库 Chai 实现单元测试
 Nightmare 可以通过注入 (.evaluate) 来操作 浏览器 API
 
+##Travis CI
+
+配合 GitHub 实现自动运行测试脚本 
